@@ -11,6 +11,7 @@ fs.readdirSync(directory).forEach(file => {
         const outputPath = path.join(directory, outputFilename);
 
         sharp(filePath)
+            .rotate() // Automatically rotate based on EXIF metadata
             .webp({ quality: 80 })
             .toFile(outputPath)
             .then(() => console.log(`Converted ${file} to WebP`))
