@@ -57,10 +57,10 @@ const CONFIG = {
         "Sadece SEN olduğun için."
     ],
     introPhotos: [
-        "images/1.JPG", "images/11.jpeg", "images/12.jpeg", "images/123.jpg",
-        "images/13.jpeg", "images/14.jpeg", "images/15.JPG", "images/16.JPG",
-        "images/17.JPG", "images/2.jpeg", "images/3.JPG", "images/4.JPG",
-        "images/5.jpeg", "images/6.JPG", "images/7.JPG", "images/9.jpeg"
+        "images/1.webp", "images/11.webp", "images/12.webp", "images/123.webp",
+        "images/13.webp", "images/14.webp", "images/15.webp", "images/16.webp",
+        "images/17.webp", "images/2.webp", "images/3.webp", "images/4.webp",
+        "images/5.webp", "images/6.webp", "images/7.webp", "images/9.webp"
     ]
 };
 
