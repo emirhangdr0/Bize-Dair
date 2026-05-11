@@ -1,0 +1,40 @@
+/* Home Button */
+#home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    /* Above navbar (900) and intro (1000) */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#home-btn svg {
+    color: var(--accent-color);
+    width: 20px;
+    height: 20px;
+}
+
+#home-btn:hover {
+    transform: translateY(-2px);
+    background: white;
+    box-shadow: 0 6px 15px rgba(212, 140, 158, 0.3);
+}
+
+#home-btn:active {
+    transform: translateY(0);
+}
+
+#home-btn.hidden {
+    display: none !important;
+}

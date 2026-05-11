@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizim İçin</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+</head>
+
+<body>
+
+    <!-- Floating Hearts Container -->
+    <div class="floating-hearts"></div>
+
+    <!-- Intro Section -->
+    <section id="intro">
+        <div class="intro-container">
+            <div class="photo-collage">
+                <div class="photo-wrapper p1">
+                    <img src="images/14.jpeg" alt="Biz 1">
+                </div>
+                <div class="photo-wrapper p2">
+                    <img src="images/16.JPG" alt="Biz 2">
+                </div>
+                <div class="photo-wrapper p3">
+                    <img src="images/17.JPG" alt="Biz 3">
+                </div>
+            </div>
+            <div class="intro-glass-card">
+                <h1>Bu Bizim Hikayemiz</h1>
+                <button id="start-btn">Hikayemize Başla</button>
+            </div>
+            <div class="scroll-indicator">
+                <span>&#8595;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="hidden">
+        <button id="home-btn" class="hidden" aria-label="Ana Sayfa">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </button>
+        <ul>
+            <li><button class="nav-link active" data-target="home">Hikayemiz</button></li>
+            <li><button class="nav-link" data-target="reasons">Neden Seni Seviyorum</button></li>
+            <li><button class="nav-link" data-target="anniversary">Yıl Dönümümüz</button></li>
+            <li><button class="nav-link" data-target="secret">Videomuzu İzle</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main id="main-content" class="hidden">
+
+        <!-- Homepage / Journey -->
+        <section id="home" class="page active">
+            <div class="hero-text">
+                <h2>Seninle geçen her an bir hazine...</h2>
+                <p>Hikayemizin en güzel anları.</p>
+            </div>
+
+            <div class="memory-container">
+                <div class="memory-slider">
+                    <!-- 1 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/6.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">22 Ekim 2024</span>
+                            <p>O Güzel Gözlerini ve Seni İlk Çektiğim Fotoğraf.</p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/7.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">23 Ekim 2024</span>
+                            <p>Adını Elime Yazdığım O Gün.</p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/123.jpg" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">24 Ekim 2024</span>
+                            <p>TAA Bandırmaya Kadar Beni Uğurlamaya Gelmiştin.</p>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/1.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">5 Kasım 2024</span>
+                            <p>O Güzel Kalbinle Benim Doğum Günümü Kutlamıştın.</p>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/3.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">26 Kasım 2024</span>
+                            <p>Seninle Beraber Ana Kampüs Ziyaretimiz.</p>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/5.jpeg" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">01 Ocak 2025</span>
+                            <p>Geçen Sene Yılbaşımız.</p>
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/11.jpeg" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">24 Ocak 2025</span>
+                            <p>VEE Bebeğimm Herşeyimm Hayatımın Anlamının Doğum Gününü Kutladığım Gün.</p>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/12.jpeg" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">14 Şubat 2025</span>
+                            <p>İlk Sevgililer Günümüz.</p>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/15.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">8 Mayıs 2025</span>
+                            <p>Okulda Sergimize Katıldığımız An.</p>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/9.jpeg" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">10 Mayıs 2025</span>
+                            <p>Erdeğe Gezmeye Gittiğimiz Gün.</p>
+                        </div>
+                    </div>
+                    <!-- 11 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/13.jpeg" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">15 Haziran 2025</span>
+                            <p>Bandırma Gezimizden Bir Fotoğraf O Gün Gözlüğüm Kırılmıştı Ağlıcamm.</p>
+                        </div>
+                    </div>
+                    <!-- 12 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/4.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">16 Ekim 2025</span>
+                            <p>Okuldan Dönerken Çektiğimiz Rastgele Ama İnanılmaz Tatlı Olan O Fotoğraf.</p>
+                        </div>
+                    </div>
+                    <!-- 13 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/16.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">31 Ekim 2025</span>
+                            <p>VEE İLK YILDÖNÜMÜMÜZ.</p>
+                        </div>
+                    </div>
+                    <!-- 14 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/17.JPG" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">5 Kasım 2025</span>
+                            <p>Yine İnanılmaz Bir Şekilde Süpriz Yapıp Kutladığın Doğum Günüm.</p>
+                        </div>
+                    </div>
+                    <!-- 15 -->
+                    <div class="memory-card">
+                        <div class="card-image">
+                            <img src="images/2.jpeg" alt="Memory">
+                        </div>
+                        <div class="card-content">
+                            <span class="date">22 Aralık 2025</span>
+                            <p>Yılbaşı Yaklaşıyor Ve Ben Yine Seninleyim İyiki Varsın Bebeğimm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <button id="prev-btn" class="control-btn">&larr;</button>
+                    <div class="slider-progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <button id="next-btn" class="control-btn">&rarr;</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons Page -->
+        <section id="reasons" class="page hidden">
+            <div class="container">
+                <h2>Seni Sevmemin 50 Nedeni</h2>
+                <div class="reason-card-wrapper">
+                    <div class="quote-icon">❝</div>
+                    <div class="reason-display" id="reason-display">
+                        <p>Öğrenmek için butona bas...</p>
+                    </div>
+                    <div class="quote-icon right">❞</div>
+                </div>
+                <button id="new-reason-btn" class="modern-btn">Bana Bir Sebep Söyle <span class="btn-icon">✨</span></button>
+            </div>
+        </section>
+
+        <!-- Anniversary Page -->
+        <section id="anniversary" class="page hidden">
+            <div class="container">
+                <div class="anniversary-card">
+                    <div class="timer-section">
+                        <h2>Bir Sonraki Yıldönümümüze</h2>
+                        <div class="timer glass-timer" id="timer">
+                            <div class="time-unit">
+                                <span id="days">00</span>
+                                <label>Gün</label>
+                            </div>
+                            <div class="time-unit">
+                                <span id="hours">00</span>
+                                <label>Saat</label>
+                            </div>
+                            <div class="time-unit">
+                                <span id="minutes">00</span>
+                                <label>Dakika</label>
+                            </div>
+                            <div class="time-unit">
+                                <span id="seconds">00</span>
+                                <label>Saniye</label>
+                            </div>
+                        </div>
+                        <p class="anniversary-note">Her saniyesi seninle güzel.</p>
+                    </div>
+
+                    <div class="divider">
+                        <span class="heart-icon">❤️</span>
+                    </div>
+
+                    <div class="timer-section">
+                        <h2>Ne Zamandır Beraberiz?</h2>
+                        <div class="timer glass-timer" id="duration-timer">
+                            <div class="time-unit">
+                                <span id="duration-days">00</span>
+                                <label>Gün</label>
+                            </div>
+                            <div class="time-unit">
+                                <span id="duration-hours">00</span>
+                                <label>Saat</label>
+                            </div>
+                            <div class="time-unit">
+                                <span id="duration-minutes">00</span>
+                                <label>Dakika</label>
+                            </div>
+                            <div class="time-unit">
+                                <span id="duration-seconds">00</span>
+                                <label>Saniye</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secret Page -->
+        <section id="secret" class="page hidden">
+            <div class="container">
+                <!-- New Secret Countdown -->
+                <div id="secret-countdown-container" style="margin-bottom: 30px;">
+                    <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Sürpize Kalan Zaman</h2>
+                    <div class="timer glass-timer" id="secret-timer">
+                        <div class="time-unit">
+                            <span id="secret-days">00</span>
+                            <label>Gün</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="secret-hours">00</span>
+                            <label>Saat</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="secret-minutes">00</span>
+                            <label>Dakika</label>
+                        </div>
+                        <div class="time-unit">
+                            <span id="secret-seconds">00</span>
+                            <label>Saniye</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="video-content">
+                    <h2>AŞKIM SENİ ÇOK SEVİYORUM YENİ YILIN KUTLU OLSUN İNŞALLAH BİR ÖMÜR BOYUNCA BENİMLE OLURSUN </h2>
+                    <div class="video-wrapper">
+                        <!-- Placeholder Video (User to replace src) -->
+                        <iframe src="https://www.youtube.com/embed/7UJeUZelPvM?rel=0"
+                            title="SENİ ÇOKKK SEVİYORUMM BİTANEMM MUTLU YILLAR" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
